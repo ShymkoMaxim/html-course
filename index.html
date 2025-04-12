@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the portfolio of [Your Name], showcasing web development projects, skills, and expertise in modern technologies.">
+    <title>[Your Name]'s Portfolio - Web Developer & Designer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I`m Maksym Shymko. Just a beginner for now, but learnig fast.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Git</li>
+                <li>SQL</li>
+                <li>RESTful APIs</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <article aria-labelledby="project1-title">
+                <h3 id="project1-title">Project 1: Portfolio Website</h3>
+                <figure>
+                    <img src="images/project1-thumbnail.jpg" alt="Thumbnail of Portfolio Website project">
+                    <figcaption>A personal portfolio website showcasing my skills and projects.</figcaption>
+                </figure>
+                <p>This project demonstrates my ability to create responsive and accessible web designs using HTML, CSS, and JavaScript.</p>
+            </article>
+            <article aria-labelledby="project2-title">
+                <h3 id="project2-title">Project 2: Task Manager App</h3>
+                <figure>
+                    <img src="images/project2-thumbnail.jpg" alt="Thumbnail of Task Manager App project">
+                    <figcaption>A task management application to organize daily activities.</figcaption>
+                </figure>
+                <p>Built with React and Node.js, this app allows users to create, edit, and delete tasks efficiently.</p>
+            </article>
+            <article aria-labelledby="project3-title">
+                <h3 id="project3-title">Project 3: E-commerce Platform</h3>
+                <figure>
+                    <img src="images/project3-thumbnail.jpg" alt="Thumbnail of E-commerce Platform project">
+                    <figcaption>An e-commerce platform for buying and selling products online.</figcaption>
+                </figure>
+                <p>This project highlights my expertise in building scalable web applications with secure payment integration and user authentication.</p>
+                <a href="#contact" class="btn" tabindex="0">Contact Me</a>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name">
+                <span class="error-message"></span>
+                <input type="email" name="email" placeholder="Your Email">
+                <span class="error-message"></span>
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <span class="error-message"></span>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Maxym Shymko. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

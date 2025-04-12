@@ -1,0 +1,234 @@
+/* styles.css */
+
+/* Add vendor prefixes for CSS properties */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background for a softer look */
+    font-family: 'Arial', 'Helvetica', sans-serif; /* Clean, widely supported fonts for readability */
+    line-height: 1.5;
+}
+header {
+    background-color: #333333; /* Dark gray background for header */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444444; /* Slightly lighter gray for navigation bar */
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffffff; /* White text for navigation links */
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Bright yellow for hover effect */
+}
+.about-me {
+    text-align: center; /* Center-align the text for a balanced look */
+    font-size: 18px; /* Slightly larger font size for readability */
+    line-height: 1.8; /* Increase line height for better spacing */
+    margin: 20px auto; /* Add vertical spacing and center horizontally */
+    max-width: 800px; /* Limit the width for better readability */
+    padding: 10px; /* Add some padding for spacing inside the section */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners for a softer appearance */
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contact {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners for a softer appearance */
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Add padding inside the section */
+    margin: 20px auto; /* Add vertical spacing and center horizontally */
+    max-width: 600px; /* Limit the width for better layout */
+    img, video {
+        max-width: 100%; /* Ensure images and videos scale within their container */
+        height: auto; /* Maintain aspect ratio */
+    }
+    text-align: center; /* Center-align text inside the section */
+}
+
+.contact h2 {
+    font-size: 24px; /* Larger font size for the section title */
+    margin-bottom: 15px; /* Add spacing below the title */
+}
+
+.contact form {
+    display: -webkit-flex; /* Use flexbox for layout */
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 15px; /* Add space between form elements */
+}
+
+.contact label {
+    font-size: 16px; /* Standard font size for labels */
+    text-align: left; /* Align labels to the left */
+}
+
+.contact input,
+.contact textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 10px; /* Add padding for better usability */
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px; /* Standard font size for text */
+}
+
+.contact textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Set a minimum height for the textarea */
+}
+
+.contact button {
+    background-color: #007bff; /* Accessible blue button */
+    color: #ffffff; /* White text for contrast */
+    padding: 10px 20px; /* Add padding for better click area */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 16px; /* Standard font size for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.contact button:hover {
+    background-color: #0056b3; /* Darker blue for hover state */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        -webkit-flex-direction: column; /* Stack navigation links vertically */
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; /* Center-align the links */
+    }
+
+    nav a {
+        margin: 10px 0; /* Add vertical spacing between links */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show the hamburger menu icon */
+        cursor: pointer; /* Change cursor to pointer */
+        font-size: 24px; /* Larger size for better visibility */
+        color: #ffffff; /* Match the navigation link color */
+        margin-bottom: 10px; /* Add spacing below the icon */
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation links by default */
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; /* Stack links vertically */
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; /* Center-align the links */
+    }
+
+    .nav-links.active {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; /* Show navigation links when active */
+    }
+
+    .contact {
+        padding: 15px; /* Reduce padding for smaller screens */
+        margin: 15px auto; /* Adjust margin for better spacing */
+    }
+
+    .contact h2 {
+        font-size: 20px; /* Reduce font size for the section title */
+    }
+
+    .contact form {
+        gap: 10px; /* Reduce spacing between form elements */
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .contact button {
+        font-size: 14px; /* Adjust button font size */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 10px; /* Further reduce padding for very small screens */
+    }
+
+    .contact h2 {
+        font-size: 18px; /* Further reduce font size for the section title */
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 12px; /* Further adjust font size for smaller screens */
+    }
+
+    .contact button {
+        font-size: 12px; /* Further adjust button font size */
+        padding: 6px 12px; /* Further adjust padding for smaller screens */
+    }
+}
+
+/* Responsive Images and Videos */
+img, video {
+    max-width: 100%; /* Ensure images and videos scale within their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+a {
+    color: #0056b3; /* Accessible blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #003d80; /* Darker blue for hover state */
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: #007bff; /* Accessible blue button */
+    color: #ffffff; /* White text for contrast */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue for hover state */
+}
+
+footer {
+    background-color: #f8f9fa; /* Light gray footer background */
+    color: #333333; /* Dark gray text */
+    text-align: center;
+    padding: 10px 0;
+}
